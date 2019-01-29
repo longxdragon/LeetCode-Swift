@@ -8,59 +8,54 @@
 
 import Foundation
 
+/**
+ 堆：又可以叫“优先级队列-PriorityQueue”，按优先级出队列
+ 
+ 定义：
+ 1、完全二叉树
+ 2、任意节点都大于等于（或小于等于）左右子节点 “大于等于-大顶堆”，“小于等于-小顶堆”
+ 
+ 常规操作：
+ 1、插入（入队）
+ 2、取出堆顶（优先级最大的出队列）
+ */
 class Heap {
     
-    private var datas: [Int]
+    public var datas: [Int]
+    public var count: Int = 0
+    
     private var capacity: Int
-    private var count: Int = 0
+    // 大顶堆、小顶堆
+    private var big: Bool
     
-    init(_ capacity: Int) {
+    init(_ capacity: Int, _ big: Bool) {
         self.capacity = capacity
+        self.big = big
         // 下标从1开始
-        self.datas = [Int](repeating: 0, count: capacity+1)
+        self.datas = [Int](repeating: 0, count: capacity + 1)
     }
     
     /**
-     自下向上堆化，建堆
+     删除并返回堆顶元素
      */
-    func buildHeapUp(_ datas: Array<Int>) {
-        for i in 0..<datas.count {
-            insert(datas[i])
+    @discardableResult func removeMax() -> Int {
+        // 堆中无数据
+        if count == 0 {
+            return -1
         }
+        // 1、把最后一个节点放到堆顶
+        let val = datas[1]
+        datas[1] = datas[count]
+        count -= 1
+        // 2、堆化
+        heapify(&datas, count, 1)
+        
+        return val
     }
     
     /**
-     插入排序：n 表示数据的个数，数组 a 中的数据从下标 1 到 n 的位置
-     
-     desc:
-     1、自上向下堆化，建堆
-     2、把堆顶的数据跟最后的交换，然后剔除最后的数据，重新自上向下堆化
-     
-     最好：O(nlogn)
-     最坏：O(nlogn)
-     平均：O(nlogn)
-     
-     原地排序算法
+     插入元素
      */
-    func sort(_ datas: inout Array<Int>, _ n: Int) {
-        buildHeapDown(&datas, n)
-        var k = n
-        while k >= 1 {
-            swap(&datas, 1, k)
-            k -= 1
-            heapify(&datas, k, 1)
-        }
-    }
-    
-    /**
-     自上向下堆化，建堆
-     */
-    func buildHeapDown(_ datas: inout Array<Int>, _ n: Int) {
-        for i in stride(from: n/2, through: 1, by: -1) {
-            heapify(&datas, n, i)
-        }
-    }
-    
     func insert(_ val: Int) {
         if count >= capacity {
             return
@@ -70,34 +65,23 @@ class Heap {
         datas[count] = val
         // 2、自下向上堆化
         var i = count
-        while i/2 > 0, datas[i/2] < datas[i] {
+        while i/2 > 0, (big ? datas[i/2] < datas[i] : datas[i/2] > datas[i]) {
             swap(&datas, i/2, i)
             i = i/2
         }
-    }
-    
-    func removeMax() {
-        // 堆中无数据
-        if count == 0 {
-            return
-        }
-        // 1、把最后一个节点放到堆顶
-        datas[1] = datas[count]
-        count -= 1
-        // 2、堆化
-        heapify(&datas, count, 1)
     }
     
     // 自上往下堆化
     func heapify(_ datas: inout Array<Int>, _ n: Int, _ i: Int) {
         var index = i
         while true {
-            // 比较当前节点、左节点、右节点哪个更大，把大的放在堆顶
+            // 最大堆：比较当前节点、左节点、右节点哪个最大，把大的放在堆顶
+            // 最小堆：比较当前节点、左节点、右节点哪个最大，把小的放在堆顶
             var max = index
-            if index*2 <= n, datas[index] < datas[index*2] {
+            if index*2 <= n, (big ? datas[index] < datas[index*2] : datas[index] > datas[index*2]) {
                 max = index*2
             }
-            if index*2+1 <= n, datas[max] < datas[index*2+1] {
+            if index*2+1 <= n, (big ? datas[max] < datas[index*2+1] : datas[max] > datas[index*2+1]) {
                 max = index*2+1
             }
             if max == index {
@@ -106,6 +90,27 @@ class Heap {
             swap(&datas, index, max)
             index = max
         }
+    }
+    
+    /**
+     替换堆顶元素
+     */
+    func replaceMax(_ val: Int) {
+        if count == 0 {
+            return
+        }
+        datas[1] = val
+        heapify(&datas, count, 1)
+    }
+    
+    /**
+     获取堆顶元素
+     */
+    var maxValue: Int? {
+        if count == 0 {
+            return nil
+        }
+        return datas[1]
     }
     
     func swap(_ datas: inout Array<Int>, _ s: Int, _ e: Int) {

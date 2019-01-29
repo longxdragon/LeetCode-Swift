@@ -134,6 +134,10 @@ class LeetCodeTests: XCTestCase {
         
         // 计数排序
         print(sort.coutingSort([2, 5, 3, 0, 2, 3, 0, 3]))
+        
+        var l = [33, 27, 21, 16, 13, 15, 19, 5, 6, 7, 8, 1, 2, 12]
+        sort.heapSort(&l)
+        print(l)
     }
     
     func  testFindMaxK() {
@@ -294,16 +298,19 @@ class LeetCodeTests: XCTestCase {
     }
     
     func testHeap() {
-        let obj = Heap(15)
+        let obj = Heap(15, true)
         let list = [33, 27, 21, 16, 13, 15, 19, 5, 6, 7, 8, 1, 2, 12]
-        obj.buildHeapUp(list)
+        for i in 0..<list.count {
+            obj.insert(list[i])
+        }
         obj.printAll()
         
         obj.removeMax()
         obj.printAll()
-        
-        var l = [0, 33, 27, 21, 16, 13, 15, 19, 5, 6, 7, 8, 1, 2, 12]
-        obj.sort(&l, l.count - 1)
-        print(l)
+    }
+    
+    func testTopK() {
+        let obj = TopK()
+        print(obj.findTopK([15, 19, 5, 6, 7, 8, 33, 27, 21, 16, 13, 1, 2, 12], 4))
     }
 }
