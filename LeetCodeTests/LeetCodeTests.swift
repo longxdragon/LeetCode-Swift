@@ -28,26 +28,7 @@ class LeetCodeTests: XCTestCase {
         let o = Recursion()
         print(o.walkStep(num: 7))
         print(o.walkStepWithoutStackOverFlow(num: 7))
-        
-        
-//        let l1 = ListNode.init(5)
-//        l1.next = ListNode.init(4)
-//        l1.next?.next = ListNode.init(3)
-//
-//        let l2 = ListNode.init(5)
-//        l2.next = ListNode.init(6)
-//        l2.next?.next = ListNode.init(4)
-//
-//        let test2 = TwoAdd.init()
-//        var l3: ListNode? = test2.addTwoNumbers(l1, l2)
-//        var str: String = ""
-//        while l3 != nil {
-//            let text = String(l3!.val)
-//            str = str + text + " "
-//            l3 = l3!.next
-//        }
-//        print(str)
-        
+                
         let l1: Node<Int> = Node.init(val: 1)
         l1.next = Node.init(val: 4)
         l1.next?.next = Node.init(val: 6)
@@ -56,7 +37,7 @@ class LeetCodeTests: XCTestCase {
         l2.next = Node.init(val: 3)
         l2.next?.next = Node.init(val: 4)
 
-        let test2 = LinkedNode()
+        let test2 = LinkedList<Int>()
         var l3: Node<Int>? = test2.combine(l1, l2)
         var str: String = ""
         while l3 != nil {
@@ -312,5 +293,23 @@ class LeetCodeTests: XCTestCase {
     func testTopK() {
         let obj = TopK()
         print(obj.findTopK([15, 19, 5, 6, 7, 8, 33, 27, 21, 16, 13, 1, 2, 12], 4))
+    }
+    
+    func testGraph() {
+        let obj = Graph(10)
+        obj.addEdge(0, 1)
+        obj.addEdge(0, 3)
+        obj.addEdge(1, 2)
+        obj.addEdge(1, 4)
+        obj.addEdge(2, 5)
+        obj.addEdge(3, 4)
+        obj.addEdge(4, 5)
+        obj.addEdge(4, 6)
+        obj.addEdge(5, 7)
+        obj.addEdge(6, 7)
+        
+        obj.bfs(0, 6)
+        obj.dfs(0, 6)
+        obj.findRelation(0, 5)
     }
 }

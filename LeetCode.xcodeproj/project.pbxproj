@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620CEEF22201A8E0007F6FDE /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CEEF12201A8E0007F6FDE /* Graph.swift */; };
 		622AF9AB218947870074489C /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF9AA218947870074489C /* Recursion.swift */; };
 		622AF9AD218947960074489C /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF9AC218947960074489C /* Sort.swift */; };
 		622E66D921CCD3EB0090A381 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E66D821CCD3EB0090A381 /* BinarySearchTree.swift */; };
@@ -26,7 +27,7 @@
 		62F1543C21D0807F0010FA18 /* ArrayQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1543921D0807F0010FA18 /* ArrayQueue.swift */; };
 		62F1543D21D0807F0010FA18 /* LinkedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1543A21D0807F0010FA18 /* LinkedQueue.swift */; };
 		62F1543F21D0AD5B0010FA18 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1543E21D0AD5B0010FA18 /* HashTable.swift */; };
-		62F57805218837D200D95C85 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F57804218837D200D95C85 /* Node.swift */; };
+		62F57805218837D200D95C85 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F57804218837D200D95C85 /* LinkedList.swift */; };
 		62FCFFD321FEA9A6004D5489 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCFFD221FEA9A6004D5489 /* Permutations.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		620CEEF12201A8E0007F6FDE /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		622AF9AA218947870074489C /* Recursion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		622AF9AC218947960074489C /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		622E66D821CCD3EB0090A381 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
@@ -63,7 +65,7 @@
 		62F1543921D0807F0010FA18 /* ArrayQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayQueue.swift; sourceTree = "<group>"; };
 		62F1543A21D0807F0010FA18 /* LinkedQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedQueue.swift; sourceTree = "<group>"; };
 		62F1543E21D0AD5B0010FA18 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
-		62F57804218837D200D95C85 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		62F57804218837D200D95C85 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		62FCFFD221FEA9A6004D5489 /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,11 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				62F1543721D0807F0010FA18 /* Queue */,
-				62F57804218837D200D95C85 /* Node.swift */,
+				62F57804218837D200D95C85 /* LinkedList.swift */,
 				627F356E21B8D2B20065E1F2 /* SkipList.swift */,
 				622E66D821CCD3EB0090A381 /* BinarySearchTree.swift */,
 				62F1543E21D0AD5B0010FA18 /* HashTable.swift */,
 				62D3230321FF34A600B5DC8E /* Heap.swift */,
+				620CEEF12201A8E0007F6FDE /* Graph.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -289,7 +292,8 @@
 				622E66D921CCD3EB0090A381 /* BinarySearchTree.swift in Sources */,
 				62ECA80021A5598500D8E91F /* FindMaxKNumber.swift in Sources */,
 				6233644B220024FE009C792D /* TopK.swift in Sources */,
-				62F57805218837D200D95C85 /* Node.swift in Sources */,
+				62F57805218837D200D95C85 /* LinkedList.swift in Sources */,
+				620CEEF22201A8E0007F6FDE /* Graph.swift in Sources */,
 				627F356F21B8D2B20065E1F2 /* SkipList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
