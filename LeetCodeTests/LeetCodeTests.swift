@@ -312,4 +312,21 @@ class LeetCodeTests: XCTestCase {
         obj.dfs(0, 6)
         obj.findRelation(0, 5)
     }
+    
+    func testStringMatch() {
+        let obj = StringMatch()
+        let string: Array<Character> = ["a", "b", "c", "a", "b", "d", "f", "a", "d"]
+        
+        XCTAssert(obj.matchBF(string, ["a", "b", "d", "f"]) == 3)
+        XCTAssert(obj.matchBF(string, ["a", "b", "d", "a"]) == -1)
+        
+        XCTAssert(obj.matchRK(string, ["a", "b", "d", "f"]) == 3)
+        XCTAssert(obj.matchRK(string, ["a", "b", "d", "a"]) == -1)
+        
+        XCTAssert(obj.matchBM(string, ["a", "b", "d", "f"]) == 3)
+        XCTAssert(obj.matchBM(string, ["a", "b", "d", "a"]) == -1)
+        
+        XCTAssert(obj.matchKMP(string, ["a", "b", "d", "f"]) >= 0)
+        XCTAssert(obj.matchKMP(string, ["a", "b", "d", "a"]) == -1)
+    }
 }
