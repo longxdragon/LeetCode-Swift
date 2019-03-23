@@ -8,6 +8,11 @@
 
 import Foundation
 
+/**
+ 输出数组的全排列
+ Input: [1,2,3]
+ Output: [ [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1] ]
+ */
 class Permutations {
     
     func printPermutations(_ data: inout Array<Int>, _ begin: Int, _ end: Int) {

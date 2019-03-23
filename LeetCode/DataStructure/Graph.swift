@@ -12,8 +12,8 @@ import Foundation
  图： 邻接表的实现
  */
 class Graph {
-    private var v: Int
-    private var adj: [LinkedList<Int>]
+    public var v: Int
+    public var adj: [LinkedList<Int>]
     
     init(_ v: Int) {
         self.v = v
@@ -27,18 +27,20 @@ class Graph {
      无向图：添加 s->e e->s 都建立关系
      */
     func addEdge(_ s: Int, _ e: Int) {
-        adj[s].add(Node(val: e))
-        adj[e].add(Node(val: s))
+        adj[s].add(e)
+        adj[e].add(s)
     }
     
     /**
      有向图：添加 s->e 即可
      */
     func addEdgeForward(_ s: Int, _ e: Int) {
-        adj[s].add(Node(val: e))
+        adj[s].add(e)
     }
     
-    /** 查找节点的 N 度关系 */
+    /**
+     查找节点的 N 度关系
+     */
     func findRelation(_ s: Int, _ n: Int) {
         if n == 0 {
             return

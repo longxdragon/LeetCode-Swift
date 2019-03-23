@@ -14,6 +14,11 @@ import Foundation
 class StringMatch {
     /**
      ------------------- Brute Force 暴力匹配算法 -------------------
+     时间复杂度：O(n*m)
+     
+     空间复杂度：无
+     
+     使用场景：模式串、主串都不宜太长
      */
     func matchBF(_ s: Array<Character>, _ p: Array<Character>) -> Int {
         let n = s.count
@@ -43,6 +48,11 @@ class StringMatch {
     
     /**
      ------------------- Rabin-Karp 算法 -------------------
+     时间复杂度：O(n)
+     
+     空间复杂度：O(n-m)
+     
+     使用场景：字符串范围不能太大且字符串长度不长，避免 Hash 冲突
      */
     func matchRK(_ s: Array<Character>, _ p: Array<Character>) -> Int {
         let n = s.count
@@ -89,6 +99,13 @@ class StringMatch {
     
     /**
      ------------------- Boyer-Moore 算法 -------------------
+     时间复杂度：O(m^2+n)
+     模式串处理：O(m^2)
+     匹配：O(n)
+     
+     空间复杂度：O(m)
+     
+     使用场景：模式串比较短的场景，模式串处理时间会更高效
      */
     func matchBM(_ string: Array<Character>, _ subString: Array<Character>) -> Int {
         let n = string.count
@@ -177,6 +194,13 @@ class StringMatch {
     
     /**
      ------------------- KMP 算法 -------------------
+     时间复杂度：O(m+n)
+     模式串处理：O(m)
+     匹配：O(n)
+     
+     空间复杂度：O(m)
+     
+     使用场景：任何场景
      */
     func matchKMP(_ s: Array<Character>, _ p: Array<Character>) -> Int {
         let n = s.count

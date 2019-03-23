@@ -40,7 +40,8 @@ class LinkedList<T> {
         return head == nil
     }
     
-    func add(_ node: Node<T>) {
+    func add(_ i: T) {
+        let node = Node(val: i)
         if isEmpty {
             head = node
             tail = head

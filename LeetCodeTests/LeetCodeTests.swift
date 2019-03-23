@@ -329,4 +329,27 @@ class LeetCodeTests: XCTestCase {
         XCTAssert(obj.matchKMP(string, ["a", "b", "d", "f"]) >= 0)
         XCTAssert(obj.matchKMP(string, ["a", "b", "d", "a"]) == -1)
     }
+    
+    func testTrie() {
+        let obj = AcTrie()
+        obj.insert(["a", "b", "f", "d"])
+        obj.insert(["a", "d", "f"])
+        obj.insert(["e", "f"])
+        obj.insert(["b", "e", "f", "a"])
+        
+        obj.buildFailurePointer()
+        obj.match(["a", "b", "e", "f", "a"])
+    }
+    
+    
+    func testMinCoin() {
+        let o = MinCoin();
+//        o.minCoinCountWithRollBack([1, 3, 5], 0, 9, 0);
+//        o.minCoinCountWithDynamicProgramming([1, 3, 5], 9)
+//        print(o.min);
+        
+        print(o.findLong([2, 9, 3, 6, 5, 1, 7]))
+        print(o.findLong([2, 3, 4, 6, 7, 8, 9, 10, 5]))
+    }
+    
 }
