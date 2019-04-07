@@ -114,11 +114,7 @@ class LeetCodeTests: XCTestCase {
         print(items3)
         
         // 计数排序
-        print(sort.coutingSort([2, 5, 3, 0, 2, 3, 0, 3]))
-        
-        var l = [33, 27, 21, 16, 13, 15, 19, 5, 6, 7, 8, 1, 2, 12]
-        sort.heapSort(&l)
-        print(l)
+        print(sort.coutingSort([2, 5, 3, 0, 2, 3, 0, 3]))        
     }
     
     func  testFindMaxK() {
