@@ -34,6 +34,8 @@
 		62F1543C21D0807F0010FA18 /* ArrayQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1543921D0807F0010FA18 /* ArrayQueue.swift */; };
 		62F1543D21D0807F0010FA18 /* LinkedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1543A21D0807F0010FA18 /* LinkedQueue.swift */; };
 		62F1543F21D0AD5B0010FA18 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1543E21D0AD5B0010FA18 /* HashTable.swift */; };
+		62F489A72266FBBA00A0F079 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F489A62266FBBA00A0F079 /* Pattern.swift */; };
+		62F489A922670F3300A0F079 /* BacktackingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F489A822670F3300A0F079 /* BacktackingTest.swift */; };
 		62F57805218837D200D95C85 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F57804218837D200D95C85 /* LinkedList.swift */; };
 		62F6A3D82245D4DD00CF78B5 /* TopoSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6A3D72245D4DD00CF78B5 /* TopoSort.swift */; };
 		62F6A3DC22465D9E00CF78B5 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6A3DB22465D9E00CF78B5 /* HeapSort.swift */; };
@@ -81,6 +83,8 @@
 		62F1543921D0807F0010FA18 /* ArrayQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayQueue.swift; sourceTree = "<group>"; };
 		62F1543A21D0807F0010FA18 /* LinkedQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedQueue.swift; sourceTree = "<group>"; };
 		62F1543E21D0AD5B0010FA18 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		62F489A62266FBBA00A0F079 /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
+		62F489A822670F3300A0F079 /* BacktackingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktackingTest.swift; sourceTree = "<group>"; };
 		62F57804218837D200D95C85 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		62F6A3D72245D4DD00CF78B5 /* TopoSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopoSort.swift; sourceTree = "<group>"; };
 		62F6A3DB22465D9E00CF78B5 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 		622AF9A9218947870074489C /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				62F489A52266FBA300A0F079 /* Backtracking */,
 				62F6A3D62245D4B900CF78B5 /* Sort */,
 				622AF9AA218947870074489C /* Recursion.swift */,
 				622AF9AC218947960074489C /* Sort.swift */,
@@ -179,6 +184,7 @@
 				62E745BC218017D500AA4B86 /* Info.plist */,
 				6265390F225AF03D003576E2 /* SortTest.swift */,
 				6248757D2254EE6C0076DA7C /* GraphTest.swift */,
+				62F489A822670F3300A0F079 /* BacktackingTest.swift */,
 			);
 			path = LeetCodeTests;
 			sourceTree = "<group>";
@@ -191,6 +197,14 @@
 				62F1543A21D0807F0010FA18 /* LinkedQueue.swift */,
 			);
 			path = Queue;
+			sourceTree = "<group>";
+		};
+		62F489A52266FBA300A0F079 /* Backtracking */ = {
+			isa = PBXGroup;
+			children = (
+				62F489A62266FBBA00A0F079 /* Pattern.swift */,
+			);
+			path = Backtracking;
 			sourceTree = "<group>";
 		};
 		62F6A3D62245D4B900CF78B5 /* Sort */ = {
@@ -311,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F489A72266FBBA00A0F079 /* Pattern.swift in Sources */,
 				62F1543D21D0807F0010FA18 /* LinkedQueue.swift in Sources */,
 				627DD1D521B61C4B0011545A /* Search.swift in Sources */,
 				627DD1D721B649A40011545A /* MathSqrt.swift in Sources */,
@@ -346,6 +361,7 @@
 			files = (
 				62653910225AF03D003576E2 /* SortTest.swift in Sources */,
 				62E745BB218017D500AA4B86 /* LeetCodeTests.swift in Sources */,
+				62F489A922670F3300A0F079 /* BacktackingTest.swift in Sources */,
 				6248757E2254EE6C0076DA7C /* GraphTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
