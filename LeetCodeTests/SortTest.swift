@@ -1,15 +1,15 @@
 //
-//  LCTestSort.swift
+//  SortTest.swift
 //  LeetCodeTests
 //
-//  Created by 许龙 on 2019/3/23.
+//  Created by 许龙 on 2019/4/8.
 //  Copyright © 2019 longxdragon. All rights reserved.
 //
 
 import XCTest
 @testable import LeetCode
 
-class LCSortTests: XCTestCase {
+class SortTest: XCTestCase {
     var list = [33, 27, 21, 16, 13, 15, 19, 5, 6, 7, 8, 1, 2, 12]
     
     func testHeapSort() {

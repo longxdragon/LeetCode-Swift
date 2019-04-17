@@ -13,6 +13,8 @@
 		622E66D921CCD3EB0090A381 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622E66D821CCD3EB0090A381 /* BinarySearchTree.swift */; };
 		6233644B220024FE009C792D /* TopK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6233644A220024FE009C792D /* TopK.swift */; };
 		6248757E2254EE6C0076DA7C /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248757D2254EE6C0076DA7C /* GraphTest.swift */; };
+		6265390E225A2BDE003576E2 /* BitMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265390D225A2BDE003576E2 /* BitMap.swift */; };
+		62653910225AF03D003576E2 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265390F225AF03D003576E2 /* SortTest.swift */; };
 		627DD1D521B61C4B0011545A /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627DD1D421B61C4B0011545A /* Search.swift */; };
 		627DD1D721B649A40011545A /* MathSqrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627DD1D621B649A40011545A /* MathSqrt.swift */; };
 		627F356F21B8D2B20065E1F2 /* SkipList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F356E21B8D2B20065E1F2 /* SkipList.swift */; };
@@ -34,7 +36,6 @@
 		62F1543F21D0AD5B0010FA18 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1543E21D0AD5B0010FA18 /* HashTable.swift */; };
 		62F57805218837D200D95C85 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F57804218837D200D95C85 /* LinkedList.swift */; };
 		62F6A3D82245D4DD00CF78B5 /* TopoSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6A3D72245D4DD00CF78B5 /* TopoSort.swift */; };
-		62F6A3DA2245E26600CF78B5 /* LCSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6A3D92245E26600CF78B5 /* LCSortTests.swift */; };
 		62F6A3DC22465D9E00CF78B5 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6A3DB22465D9E00CF78B5 /* HeapSort.swift */; };
 		62FCFFD321FEA9A6004D5489 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCFFD221FEA9A6004D5489 /* Permutations.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,8 @@
 		622E66D821CCD3EB0090A381 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		6233644A220024FE009C792D /* TopK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopK.swift; sourceTree = "<group>"; };
 		6248757D2254EE6C0076DA7C /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
+		6265390D225A2BDE003576E2 /* BitMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMap.swift; sourceTree = "<group>"; };
+		6265390F225AF03D003576E2 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
 		627DD1D421B61C4B0011545A /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		627DD1D621B649A40011545A /* MathSqrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathSqrt.swift; sourceTree = "<group>"; };
 		627F356E21B8D2B20065E1F2 /* SkipList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipList.swift; sourceTree = "<group>"; };
@@ -80,7 +83,6 @@
 		62F1543E21D0AD5B0010FA18 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
 		62F57804218837D200D95C85 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		62F6A3D72245D4DD00CF78B5 /* TopoSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopoSort.swift; sourceTree = "<group>"; };
-		62F6A3D92245E26600CF78B5 /* LCSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSortTests.swift; sourceTree = "<group>"; };
 		62F6A3DB22465D9E00CF78B5 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		62FCFFD221FEA9A6004D5489 /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,12 +126,13 @@
 			children = (
 				62F1543721D0807F0010FA18 /* Queue */,
 				62F57804218837D200D95C85 /* LinkedList.swift */,
-				627F356E21B8D2B20065E1F2 /* SkipList.swift */,
 				622E66D821CCD3EB0090A381 /* BinarySearchTree.swift */,
 				62F1543E21D0AD5B0010FA18 /* HashTable.swift */,
+				627F356E21B8D2B20065E1F2 /* SkipList.swift */,
 				62D3230321FF34A600B5DC8E /* Heap.swift */,
 				620CEEF12201A8E0007F6FDE /* Graph.swift */,
 				6284E98E221B9DE400906B60 /* Trie.swift */,
+				6265390D225A2BDE003576E2 /* BitMap.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -174,7 +177,7 @@
 			children = (
 				62E745BA218017D500AA4B86 /* LeetCodeTests.swift */,
 				62E745BC218017D500AA4B86 /* Info.plist */,
-				62F6A3D92245E26600CF78B5 /* LCSortTests.swift */,
+				6265390F225AF03D003576E2 /* SortTest.swift */,
 				6248757D2254EE6C0076DA7C /* GraphTest.swift */,
 			);
 			path = LeetCodeTests;
@@ -316,6 +319,7 @@
 				62F1543C21D0807F0010FA18 /* ArrayQueue.swift in Sources */,
 				622AF9AD218947960074489C /* Sort.swift in Sources */,
 				62E745CD2180676A00AA4B86 /* PalindromeNumber.swift in Sources */,
+				6265390E225A2BDE003576E2 /* BitMap.swift in Sources */,
 				62F6A3DC22465D9E00CF78B5 /* HeapSort.swift in Sources */,
 				62F1543B21D0807F0010FA18 /* CircularQueue.swift in Sources */,
 				62F1543F21D0AD5B0010FA18 /* HashTable.swift in Sources */,
@@ -340,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F6A3DA2245E26600CF78B5 /* LCSortTests.swift in Sources */,
+				62653910225AF03D003576E2 /* SortTest.swift in Sources */,
 				62E745BB218017D500AA4B86 /* LeetCodeTests.swift in Sources */,
 				6248757E2254EE6C0076DA7C /* GraphTest.swift in Sources */,
 			);

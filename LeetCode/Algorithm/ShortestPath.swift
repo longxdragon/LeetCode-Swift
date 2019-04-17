@@ -22,13 +22,19 @@ public class PathEdge {
 }
 
 // 顶点
-private class PathVertex {
+public class PathVertex {
     var vId: Int    // 节点下标
     var dist: Int   // 从初始位置到当前节点的路径大小
+    var f: Int
+    var x: Int
+    var y: Int
     
-    init(_ vId: Int, _ dist: Int) {
+    init(_ vId: Int, _ x: Int, _ y: Int) {
         self.vId = vId
-        self.dist = dist
+        self.x = x
+        self.y = y
+        self.dist = Int(INT_MAX)
+        self.f = Int(INT_MAX)
     }
 }
 
@@ -41,7 +47,7 @@ private class PathPriorityQueue {
     init(_ count: Int) {
         self.count = 0
         self.capacity = count
-        self.nodes = [PathVertex](repeating: PathVertex(0, Int(INT_MAX)), count: count+1)
+        self.nodes = [PathVertex](repeating: PathVertex(0, 0, 0), count: count+1)
     }
     
     func poll() -> PathVertex? {
@@ -78,6 +84,10 @@ private class PathPriorityQueue {
         if index <= count {
             nodes[index] = v
         }
+    }
+    
+    func clear() {
+        count = 0
     }
     
     // 从下标s开始，自上往下堆化
@@ -119,6 +129,7 @@ private class PathPriorityQueue {
 public class PathGraph {
     var v: Int
     var adj: [LinkedList<PathEdge>]
+    var vertexs: [PathVertex]
     
     init(_ v: Int) {
         self.v = v
@@ -126,10 +137,15 @@ public class PathGraph {
         for i in 0..<v {
             self.adj[i] = LinkedList<PathEdge>()
         }
+        self.vertexs = [PathVertex](repeating: PathVertex(0, 0, 0), count: v)
     }
     
     func addEdge(_ s: Int, _ e: Int, _ w: Int) {
         self.adj[s].add(PathEdge(s, e, w))
+    }
+    
+    func addVextex(_ vId: Int, _ x: Int, _ y: Int) {
+        self.vertexs[vId] = PathVertex(vId, x, y)
     }
     
     /**
@@ -138,23 +154,25 @@ public class PathGraph {
     func dijkstra(_ s: Int, _ e: Int) {
         var predecessor = [Int](repeating: 0, count: v)
         var inqueue = [Bool](repeating: false, count: v)
-        var nodes = [PathVertex](repeating: PathVertex(0, 0), count: v)
-        for i in 0..<v {
-            nodes[i] = PathVertex(i, Int(INT_MAX))
-        }
         let priorityQueue = PathPriorityQueue(v)
         
-        nodes[s].dist = 0
-        priorityQueue.add(nodes[s])
+        var vertexs = [PathVertex](repeating: PathVertex(0, 0, 0), count: v)
+        for i in 0..<v {
+            vertexs[i] = PathVertex(i, 0, 0)
+        }
+        
+        vertexs[s].dist = 0
+        priorityQueue.add(vertexs[s])
         inqueue[s] = true
         
         while let vertex = priorityQueue.poll() {
+            // 需要等到到 e 最短的距离出队列，才终止循环
             if vertex.vId == e {
                 break
             }
             for i in 0..<self.adj[vertex.vId].size {
                 if let edge = self.adj[vertex.vId].getValue(i) {
-                    let nextVertex = nodes[edge.eId]
+                    let nextVertex = vertexs[edge.eId]
                     if vertex.dist + edge.w < nextVertex.dist {
                         nextVertex.dist = vertex.dist + edge.w
                         
@@ -181,5 +199,56 @@ public class PathGraph {
         }
         printShortestPath(s, predecessor[t], predecessor)
         print(" -> \(t)", terminator: "")
+    }
+    
+    /**
+     ------------------- A*算法 -------------------
+     */
+    func astar(_ s: Int, _ e: Int) {
+        var predecessor = [Int](repeating: 0, count: v)
+        var inqueue = [Bool](repeating: false, count: v)
+        let priorityQueue = PathPriorityQueue(v)
+
+        self.vertexs[s].dist = 0
+        self.vertexs[s].f = 0
+        priorityQueue.add(self.vertexs[s])
+        inqueue[s] = true
+        
+        while let vertex = priorityQueue.poll() {
+            for i in 0..<self.adj[vertex.vId].size {
+                if let edge = self.adj[vertex.vId].getValue(i) {
+                    let nextVertex = self.vertexs[edge.eId]
+                    
+                    // 这边的“f”就相当于之前的“dist”
+                    // 修改后的“dist” = f + 曼哈顿距离
+                    if vertex.f + edge.w < nextVertex.f {
+                        nextVertex.f = vertex.f + edge.w
+                        nextVertex.dist = nextVertex.f + manhattan(nextVertex, self.vertexs[e])
+                        
+                        if inqueue[nextVertex.vId] {
+                            priorityQueue.update(nextVertex)
+                        } else {
+                            priorityQueue.add(nextVertex)
+                            inqueue[nextVertex.vId] = true
+                        }
+                        predecessor[nextVertex.vId] = vertex.vId
+                    }
+                    
+                    // 只要可以走到 e 就直接返回，所以 A*算法，不是最短路径方案
+                    if nextVertex.vId == e {
+                        // 清空优先队列，才能退出 while 循环
+                        priorityQueue.clear()
+                        break
+                    }
+                }
+            }
+        }
+        
+        printShortestPath(s, e, predecessor)
+        print("")
+    }
+    
+    func manhattan(_ v1: PathVertex, _ v2: PathVertex) -> Int {
+        return abs(v1.x - v2.x) + abs(v1.y - v2.y)
     }
 }

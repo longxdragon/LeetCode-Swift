@@ -114,10 +114,8 @@ class SkipList<T: Comparable> {
     public func printAll() {
         var p = head
         while let n = p.forwards[0] {
-            for i in 0..<n.maxLevel {
-                if let m = p.forwards[i] {
-                    print("\(m.val!) ", terminator: "")
-                }
+            for _ in 0..<n.maxLevel {
+                print("\(n.val!) ", terminator: "")
             }
             print("")
             p = n
