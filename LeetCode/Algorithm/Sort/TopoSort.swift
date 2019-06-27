@@ -21,9 +21,8 @@ class TopoSort {
         var inDegree = [Int](repeating: 0, count: v)
         for i in 0..<v {
             for j in 0..<graph.adj[i].size {
-                if let w = graph.adj[i].getValue(j) {
-                    inDegree[w] += 1;
-                }
+                let w = graph.adj[i].node(at: j).val
+                inDegree[w] += 1;
             }
         }
         
@@ -38,11 +37,10 @@ class TopoSort {
             print(" -> \(i)", terminator: "")
             // 并且把关联的顶点，入度 -1，依次循环
             for j in 0..<graph.adj[i].size {
-                if let w = graph.adj[i].getValue(j) {
-                    inDegree[w] -= 1
-                    if inDegree[w] == 0 {
-                        queue.enqueue(w)
-                    }
+                let w = graph.adj[i].node(at: j).val
+                inDegree[w] -= 1
+                if inDegree[w] == 0 {
+                    queue.enqueue(w)
                 }
             }
         }
@@ -62,9 +60,8 @@ class TopoSort {
         // 通过邻接表，生成逆邻接表
         for i in 0..<v {
             for j in 0..<graph.adj[i].size {
-                if let w = graph.adj[i].getValue(j) {
-                    inverseAdj[w].add(i)
-                }
+                let w = graph.adj[i].node(at: j).val
+                inverseAdj[w].add(i)
             }
         }
         // 深度优先遍历图
@@ -80,13 +77,12 @@ class TopoSort {
     
     public func dfs(_ vertex: Int, _ inverseAdj: [LinkedList<Int>], _ visited: inout [Bool]) {
         for i in 0..<inverseAdj[vertex].size {
-            if let w = inverseAdj[vertex].getValue(i) {
-                if visited[w] {
-                    continue
-                } else {
-                    visited[w] = true
-                    dfs(w, inverseAdj, &visited)
-                }
+            let w = inverseAdj[vertex].node(at: i).val
+            if visited[w] {
+                continue
+            } else {
+                visited[w] = true
+                dfs(w, inverseAdj, &visited)
             }
         }
         print(" -> \(vertex)", terminator: "")

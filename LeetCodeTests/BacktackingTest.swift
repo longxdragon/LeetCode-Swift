@@ -15,11 +15,12 @@ class BacktackingTest : XCTestCase {
         var o = Pattern(["a", "b", "*", "f", "a"], 5)
         XCTAssertFalse(o.match(["a", "b", "a", "b", "a", "a"], 6))
         XCTAssertTrue(o.match(["a", "b", "a", "b", "f", "a"], 6))
-        
+
         o = Pattern(["a", "b", "*"], 3)
         XCTAssertTrue(o.match(["a", "b", "a", "b", "f", "a"], 6))
-        
+
         o = Pattern(["a", "b", "?", "a"], 4)
         XCTAssertTrue(o.match(["a", "b"], 2))
     }
+    
 }

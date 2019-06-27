@@ -59,14 +59,13 @@ class Graph {
         while queue.size > 0, level > 0 {
             if let val = queue.dequeue() {
                 for i in 0..<adj[val].size {
-                    if let p = adj[val].getValue(i) {
-                        if visited[p] {
-                            continue
-                        }
-                        visited[p] = true
-                        queue.enqueue(p)
-                        levels.append(p)
+                    let p = adj[val].node(at: i).val
+                    if visited[p] {
+                        continue
                     }
+                    visited[p] = true
+                    queue.enqueue(p)
+                    levels.append(p)
                 }
                 // 某一度的好友遍历完毕
                 if let l = last, l == val {
@@ -104,23 +103,22 @@ class Graph {
             if let val = queue.dequeue() {
                 // 遍历当前顶点 val 的所有关联顶点
                 for i in 0..<adj[val].size {
-                    if let p = adj[val].getValue(i) {
-                        // 之前已经遍历过了
-                        if visited[p] {
-                            continue
-                        }
-                        // 存储遍历的上一个顶点 val
-                        prev[p] = val
-                        // 找到了
-                        if p == e {
-                            printLoad(prev, s, e)
-                            print("")
-                            return
-                        }
-                        // 没找到，继续找
-                        visited[p] = true
-                        queue.enqueue(p)
+                    let p = adj[val].node(at: i).val
+                    // 之前已经遍历过了
+                    if visited[p] {
+                        continue
                     }
+                    // 存储遍历的上一个顶点 val
+                    prev[p] = val
+                    // 找到了
+                    if p == e {
+                        printLoad(prev, s, e)
+                        print("")
+                        return
+                    }
+                    // 没找到，继续找
+                    visited[p] = true
+                    queue.enqueue(p)
                 }
             }
         }
@@ -161,15 +159,14 @@ class Graph {
             return
         }
         for i in 0..<adj[p].size {
-            if let q = adj[p].getValue(i) {
-                // 遍历过了，就跳过
-                if visited[q] {
-                    continue
-                }
-                prev[q] = p
-                // 递归遍历
-                recurDfs(q, e, &visited, &prev)
+            let q = adj[p].node(at: i).val
+            // 遍历过了，就跳过
+            if visited[q] {
+                continue
             }
+            prev[q] = p
+            // 递归遍历
+            recurDfs(q, e, &visited, &prev)
         }
     }
     

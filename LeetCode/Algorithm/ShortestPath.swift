@@ -171,19 +171,18 @@ public class PathGraph {
                 break
             }
             for i in 0..<self.adj[vertex.vId].size {
-                if let edge = self.adj[vertex.vId].getValue(i) {
-                    let nextVertex = vertexs[edge.eId]
-                    if vertex.dist + edge.w < nextVertex.dist {
-                        nextVertex.dist = vertex.dist + edge.w
-                        
-                        if inqueue[nextVertex.vId] {
-                            priorityQueue.update(nextVertex)
-                        } else {
-                            priorityQueue.add(nextVertex)
-                            inqueue[nextVertex.vId] = true
-                        }
-                        predecessor[nextVertex.vId] = vertex.vId
+                let edge = self.adj[vertex.vId].node(at: i).val
+                let nextVertex = vertexs[edge.eId]
+                if vertex.dist + edge.w < nextVertex.dist {
+                    nextVertex.dist = vertex.dist + edge.w
+                    
+                    if inqueue[nextVertex.vId] {
+                        priorityQueue.update(nextVertex)
+                    } else {
+                        priorityQueue.add(nextVertex)
+                        inqueue[nextVertex.vId] = true
                     }
+                    predecessor[nextVertex.vId] = vertex.vId
                 }
             }
         }
@@ -216,30 +215,29 @@ public class PathGraph {
         
         while let vertex = priorityQueue.poll() {
             for i in 0..<self.adj[vertex.vId].size {
-                if let edge = self.adj[vertex.vId].getValue(i) {
-                    let nextVertex = self.vertexs[edge.eId]
+                let edge = self.adj[vertex.vId].node(at: i).val
+                let nextVertex = self.vertexs[edge.eId]
+                
+                // 这边的“f”就相当于之前的“dist”
+                // 修改后的“dist” = f + 曼哈顿距离
+                if vertex.f + edge.w < nextVertex.f {
+                    nextVertex.f = vertex.f + edge.w
+                    nextVertex.dist = nextVertex.f + manhattan(nextVertex, self.vertexs[e])
                     
-                    // 这边的“f”就相当于之前的“dist”
-                    // 修改后的“dist” = f + 曼哈顿距离
-                    if vertex.f + edge.w < nextVertex.f {
-                        nextVertex.f = vertex.f + edge.w
-                        nextVertex.dist = nextVertex.f + manhattan(nextVertex, self.vertexs[e])
-                        
-                        if inqueue[nextVertex.vId] {
-                            priorityQueue.update(nextVertex)
-                        } else {
-                            priorityQueue.add(nextVertex)
-                            inqueue[nextVertex.vId] = true
-                        }
-                        predecessor[nextVertex.vId] = vertex.vId
+                    if inqueue[nextVertex.vId] {
+                        priorityQueue.update(nextVertex)
+                    } else {
+                        priorityQueue.add(nextVertex)
+                        inqueue[nextVertex.vId] = true
                     }
-                    
-                    // 只要可以走到 e 就直接返回，所以 A*算法，不是最短路径方案
-                    if nextVertex.vId == e {
-                        // 清空优先队列，才能退出 while 循环
-                        priorityQueue.clear()
-                        break
-                    }
+                    predecessor[nextVertex.vId] = vertex.vId
+                }
+                
+                // 只要可以走到 e 就直接返回，所以 A*算法，不是最短路径方案
+                if nextVertex.vId == e {
+                    // 清空优先队列，才能退出 while 循环
+                    priorityQueue.clear()
+                    break
                 }
             }
         }

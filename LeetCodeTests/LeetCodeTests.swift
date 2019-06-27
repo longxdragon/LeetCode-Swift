@@ -28,24 +28,6 @@ class LeetCodeTests: XCTestCase {
         let o = Recursion()
         print(o.walkStep(num: 7))
         print(o.walkStepWithoutStackOverFlow(num: 7))
-                
-        let l1: Node<Int> = Node.init(val: 1)
-        l1.next = Node.init(val: 4)
-        l1.next?.next = Node.init(val: 6)
-        
-        let l2: Node<Int> = Node.init(val: 2)
-        l2.next = Node.init(val: 3)
-        l2.next?.next = Node.init(val: 4)
-
-        let test2 = LinkedList<Int>()
-        var l3: Node<Int>? = test2.combine(l1, l2)
-        var str: String = ""
-        while l3 != nil {
-            let text = String(l3!.val!)
-            str = str + text + " "
-            l3 = l3!.next
-        }
-        print(str)
     }
     
     func testPalindrome() {
