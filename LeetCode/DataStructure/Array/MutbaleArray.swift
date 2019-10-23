@@ -26,7 +26,7 @@ class MutableArray<T: Comparable> {
     func add(_ item: T) {
         if count >= capacity {
             // 扩容 + 搬数据
-            var list = self.list
+            let list = self.list
             self.list = [T?](repeating: nil, count: capacity*2)
             for i in 0..<count {
                 self.list[i] = list[i]

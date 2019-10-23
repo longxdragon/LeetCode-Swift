@@ -101,8 +101,8 @@ class LeetCodeTests: XCTestCase {
     
     func  testFindMaxK() {
         let obj = FindMaxKNumber()
-        var items = [4, 5, 6, 3, 2, 1, 1, 1, 1]
-        print(obj.find(&items, 5))
+        var items = [3,2,1,5,6,4]
+        print(obj.find(&items, 2))
     }
     
     func testSearch() {
@@ -284,6 +284,39 @@ class LeetCodeTests: XCTestCase {
         
         print(o.findLong([2, 9, 3, 6, 5, 1, 7]))
         print(o.findLong([2, 3, 4, 6, 7, 8, 9, 10, 5]))
+    }
+    
+    
+    func testSimpleNumber() {
+        let so = Solution();
+//        XCTAssertEqual(so.singleNumber3([1, 1, 64, 96]), [6, 4]);
+        
+//        XCTAssertEqual(so.majorityElement([1, 2]), [1, 2]);
+        
+//        XCTAssertEqual(so.searchMatrix([[1,3,5,7],[10,11,16,20],[23,30,34,50]], 3), true);
+        
+//        var nums1 = [2, 2, 3, 0, 0, 0];
+//        let nums2 = [1, 2, 3];
+//        so.merge(&nums1, 3, nums2, nums2.count);
+//        XCTAssertEqual(nums1, [1, 2, 2, 2, 3, 3]);
+        
+//        XCTAssertEqual(so.superEggDrop(3, 14), 4);
+        
+//        XCTAssertEqual(so.shortestSubarray([48,99,37,4,-31], 144), 2);
+        
+//        XCTAssertEqual(so.maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3), [3,3,5,5,6,7]);
+        
+//        XCTAssertEqual(so.isPalindrome("A man, a plan, a canal: Panama"), true);
+//        XCTAssertEqual(so.isPalindrome("race a car"), false);
+//        XCTAssertEqual(so.validPalindrome("aba"), true);
+//        XCTAssertEqual(so.validPalindrome("abca"), true);
+//        XCTAssertEqual(so.validPalindrome("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"), true);
+        
+//        XCTAssertEqual(so.partition("babad"), []);
+//        XCTAssertEqual(so.longestPalindrome("babad"), "bab");
+        
+        
+        XCTAssertEqual(so.findKthLargest([3,2,1,5,6,4], 2), 5);
     }
     
 }

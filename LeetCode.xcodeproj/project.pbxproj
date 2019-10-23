@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620581DB235442A0000BA3CE /* 0136. Single Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620581DA235442A0000BA3CE /* 0136. Single Number.swift */; };
+		620581DD2354435D000BA3CE /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620581DC2354435D000BA3CE /* Solution.swift */; };
+		620581DF2354445F000BA3CE /* 0137. Single Number II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620581DE2354445F000BA3CE /* 0137. Single Number II.swift */; };
+		620581E12354454D000BA3CE /* 0260. Single Number III.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620581E02354454D000BA3CE /* 0260. Single Number III.swift */; };
+		620581E3235482B3000BA3CE /* 0229. Majority Element II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620581E2235482B3000BA3CE /* 0229. Majority Element II.swift */; };
+		620581E5235482D4000BA3CE /* 0169. Majority Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620581E4235482D4000BA3CE /* 0169. Majority Element.swift */; };
 		620CEEF22201A8E0007F6FDE /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CEEF12201A8E0007F6FDE /* Graph.swift */; };
 		622AF9AB218947870074489C /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF9AA218947870074489C /* Recursion.swift */; };
 		622AF9AD218947960074489C /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF9AC218947960074489C /* Sort.swift */; };
@@ -31,6 +37,15 @@
 		62B3367222686B6B000A1B1E /* CircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B3367122686B6B000A1B1E /* CircularLinkedList.swift */; };
 		62B3367422687D88000A1B1E /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B3367322687D88000A1B1E /* LinkedListTest.swift */; };
 		62D3230421FF34A600B5DC8E /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D3230321FF34A600B5DC8E /* Heap.swift */; };
+		62E031E62357245000A37F18 /* 0074. Search a 2D Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031E52357245000A37F18 /* 0074. Search a 2D Matrix.swift */; };
+		62E031E82357FCC900A37F18 /* 0240. Search a 2D Matrix II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031E72357FCC900A37F18 /* 0240. Search a 2D Matrix II.swift */; };
+		62E031EA23580E8000A37F18 /* 0088. Merge Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031E923580E8000A37F18 /* 0088. Merge Sorted Array.swift */; };
+		62E031EC2358363D00A37F18 /* 0887. Super Egg Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031EB2358363D00A37F18 /* 0887. Super Egg Drop.swift */; };
+		62E031EE2358746300A37F18 /* 0862. Shortest Subarray with Sum at Least K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031ED2358746300A37F18 /* 0862. Shortest Subarray with Sum at Least K.swift */; };
+		62E031F02359572500A37F18 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031EF2359572500A37F18 /* Deque.swift */; };
+		62E031F22359A42800A37F18 /* 0239. Sliding Window Maximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031F12359A42800A37F18 /* 0239. Sliding Window Maximum.swift */; };
+		62E031F42359B35900A37F18 /* 0125. Valid Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031F32359B35900A37F18 /* 0125. Valid Palindrome.swift */; };
+		62E031F62359B36E00A37F18 /* 0680. Valid Palindrome II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E031F52359B36E00A37F18 /* 0680. Valid Palindrome II.swift */; };
 		62E745B6218017D500AA4B86 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E745AC218017D400AA4B86 /* LeetCode.framework */; };
 		62E745BB218017D500AA4B86 /* LeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E745BA218017D500AA4B86 /* LeetCodeTests.swift */; };
 		62E745BD218017D500AA4B86 /* LeetCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E745AF218017D400AA4B86 /* LeetCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +62,12 @@
 		62F489A922670F3300A0F079 /* BacktackingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F489A822670F3300A0F079 /* BacktackingTest.swift */; };
 		62F6A3D82245D4DD00CF78B5 /* TopoSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6A3D72245D4DD00CF78B5 /* TopoSort.swift */; };
 		62F6A3DC22465D9E00CF78B5 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6A3DB22465D9E00CF78B5 /* HeapSort.swift */; };
+		62FB7465235D507600E049B5 /* 0131. Palindrome Partitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB7464235D507600E049B5 /* 0131. Palindrome Partitioning.swift */; };
+		62FB7467235D508D00E049B5 /* 0132. Palindrome Partitioning II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB7466235D508D00E049B5 /* 0132. Palindrome Partitioning II.swift */; };
+		62FB7469235ED3AD00E049B5 /* 0005. Longest Palindromic Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB7468235ED3AD00E049B5 /* 0005. Longest Palindromic Substring.swift */; };
+		62FB746B236034A100E049B5 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB746A236034A100E049B5 /* BubbleSort.swift */; };
+		62FB746D23603B7500E049B5 /* 0035. Search Insert Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB746C23603B7500E049B5 /* 0035. Search Insert Position.swift */; };
+		62FB747123603CB100E049B5 /* 0215. Kth Largest Element in an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB747023603CB100E049B5 /* 0215. Kth Largest Element in an Array.swift */; };
 		62FCFFD321FEA9A6004D5489 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCFFD221FEA9A6004D5489 /* Permutations.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +82,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		620581DA235442A0000BA3CE /* 0136. Single Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0136. Single Number.swift"; sourceTree = "<group>"; };
+		620581DC2354435D000BA3CE /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
+		620581DE2354445F000BA3CE /* 0137. Single Number II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0137. Single Number II.swift"; sourceTree = "<group>"; };
+		620581E02354454D000BA3CE /* 0260. Single Number III.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0260. Single Number III.swift"; sourceTree = "<group>"; };
+		620581E2235482B3000BA3CE /* 0229. Majority Element II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0229. Majority Element II.swift"; sourceTree = "<group>"; };
+		620581E4235482D4000BA3CE /* 0169. Majority Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0169. Majority Element.swift"; sourceTree = "<group>"; };
 		620CEEF12201A8E0007F6FDE /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		622AF9AA218947870074489C /* Recursion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		622AF9AC218947960074489C /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
@@ -85,6 +112,15 @@
 		62B3367122686B6B000A1B1E /* CircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLinkedList.swift; sourceTree = "<group>"; };
 		62B3367322687D88000A1B1E /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		62D3230321FF34A600B5DC8E /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		62E031E52357245000A37F18 /* 0074. Search a 2D Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0074. Search a 2D Matrix.swift"; sourceTree = "<group>"; };
+		62E031E72357FCC900A37F18 /* 0240. Search a 2D Matrix II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0240. Search a 2D Matrix II.swift"; sourceTree = "<group>"; };
+		62E031E923580E8000A37F18 /* 0088. Merge Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0088. Merge Sorted Array.swift"; sourceTree = "<group>"; };
+		62E031EB2358363D00A37F18 /* 0887. Super Egg Drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0887. Super Egg Drop.swift"; sourceTree = "<group>"; };
+		62E031ED2358746300A37F18 /* 0862. Shortest Subarray with Sum at Least K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0862. Shortest Subarray with Sum at Least K.swift"; sourceTree = "<group>"; };
+		62E031EF2359572500A37F18 /* Deque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
+		62E031F12359A42800A37F18 /* 0239. Sliding Window Maximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0239. Sliding Window Maximum.swift"; sourceTree = "<group>"; };
+		62E031F32359B35900A37F18 /* 0125. Valid Palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0125. Valid Palindrome.swift"; sourceTree = "<group>"; };
+		62E031F52359B36E00A37F18 /* 0680. Valid Palindrome II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0680. Valid Palindrome II.swift"; sourceTree = "<group>"; };
 		62E745AC218017D400AA4B86 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E745AF218017D400AA4B86 /* LeetCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode.h; sourceTree = "<group>"; };
 		62E745B0218017D400AA4B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +140,12 @@
 		62F489A822670F3300A0F079 /* BacktackingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktackingTest.swift; sourceTree = "<group>"; };
 		62F6A3D72245D4DD00CF78B5 /* TopoSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopoSort.swift; sourceTree = "<group>"; };
 		62F6A3DB22465D9E00CF78B5 /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
+		62FB7464235D507600E049B5 /* 0131. Palindrome Partitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0131. Palindrome Partitioning.swift"; sourceTree = "<group>"; };
+		62FB7466235D508D00E049B5 /* 0132. Palindrome Partitioning II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0132. Palindrome Partitioning II.swift"; sourceTree = "<group>"; };
+		62FB7468235ED3AD00E049B5 /* 0005. Longest Palindromic Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0005. Longest Palindromic Substring.swift"; sourceTree = "<group>"; };
+		62FB746A236034A100E049B5 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		62FB746C23603B7500E049B5 /* 0035. Search Insert Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0035. Search Insert Position.swift"; sourceTree = "<group>"; };
+		62FB747023603CB100E049B5 /* 0215. Kth Largest Element in an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0215. Kth Largest Element in an Array.swift"; sourceTree = "<group>"; };
 		62FCFFD221FEA9A6004D5489 /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +229,32 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
+		62E031F72359B42100A37F18 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				620581DC2354435D000BA3CE /* Solution.swift */,
+				620581DA235442A0000BA3CE /* 0136. Single Number.swift */,
+				620581DE2354445F000BA3CE /* 0137. Single Number II.swift */,
+				620581E02354454D000BA3CE /* 0260. Single Number III.swift */,
+				620581E4235482D4000BA3CE /* 0169. Majority Element.swift */,
+				620581E2235482B3000BA3CE /* 0229. Majority Element II.swift */,
+				62E031E52357245000A37F18 /* 0074. Search a 2D Matrix.swift */,
+				62E031E72357FCC900A37F18 /* 0240. Search a 2D Matrix II.swift */,
+				62E031E923580E8000A37F18 /* 0088. Merge Sorted Array.swift */,
+				62E031EB2358363D00A37F18 /* 0887. Super Egg Drop.swift */,
+				62E031ED2358746300A37F18 /* 0862. Shortest Subarray with Sum at Least K.swift */,
+				62E031F12359A42800A37F18 /* 0239. Sliding Window Maximum.swift */,
+				62E031F32359B35900A37F18 /* 0125. Valid Palindrome.swift */,
+				62E031F52359B36E00A37F18 /* 0680. Valid Palindrome II.swift */,
+				62FB7464235D507600E049B5 /* 0131. Palindrome Partitioning.swift */,
+				62FB7466235D508D00E049B5 /* 0132. Palindrome Partitioning II.swift */,
+				62FB7468235ED3AD00E049B5 /* 0005. Longest Palindromic Substring.swift */,
+				62FB746C23603B7500E049B5 /* 0035. Search Insert Position.swift */,
+				62FB747023603CB100E049B5 /* 0215. Kth Largest Element in an Array.swift */,
+			);
+			path = Problems;
+			sourceTree = "<group>";
+		};
 		62E745A2218017D400AA4B86 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +276,7 @@
 		62E745AE218017D400AA4B86 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				62E031F72359B42100A37F18 /* Problems */,
 				622AF9A9218947870074489C /* Algorithm */,
 				622CDA33218701A50038D728 /* DataStructure */,
 				62E745B0218017D400AA4B86 /* Info.plist */,
@@ -243,6 +312,7 @@
 				62F1543821D0807F0010FA18 /* CircularQueue.swift */,
 				62F1543921D0807F0010FA18 /* ArrayQueue.swift */,
 				62F1543A21D0807F0010FA18 /* LinkedQueue.swift */,
+				62E031EF2359572500A37F18 /* Deque.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -260,6 +330,7 @@
 			children = (
 				62F6A3D72245D4DD00CF78B5 /* TopoSort.swift */,
 				62F6A3DB22465D9E00CF78B5 /* HeapSort.swift */,
+				62FB746A236034A100E049B5 /* BubbleSort.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -326,10 +397,11 @@
 				TargetAttributes = {
 					62E745AB218017D400AA4B86 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1100;
 					};
 					62E745B4218017D500AA4B86 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -373,37 +445,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E031E62357245000A37F18 /* 0074. Search a 2D Matrix.swift in Sources */,
 				629E11BC22CB49E10022FA71 /* BinarySearchTree.swift in Sources */,
 				62F489A72266FBBA00A0F079 /* Pattern.swift in Sources */,
 				62F1543D21D0807F0010FA18 /* LinkedQueue.swift in Sources */,
+				62FB7465235D507600E049B5 /* 0131. Palindrome Partitioning.swift in Sources */,
 				627DD1D521B61C4B0011545A /* Search.swift in Sources */,
 				62B3367022685DF1000A1B1E /* LinkedList.swift in Sources */,
+				62E031F02359572500A37F18 /* Deque.swift in Sources */,
+				62E031EE2358746300A37F18 /* 0862. Shortest Subarray with Sum at Least K.swift in Sources */,
 				627DD1D721B649A40011545A /* MathSqrt.swift in Sources */,
 				6284E98F221B9DE400906B60 /* Trie.swift in Sources */,
+				62FB746D23603B7500E049B5 /* 0035. Search Insert Position.swift in Sources */,
 				62E88F2922532867001405DA /* ShortestPath.swift in Sources */,
+				62E031F62359B36E00A37F18 /* 0680. Valid Palindrome II.swift in Sources */,
+				620581DD2354435D000BA3CE /* Solution.swift in Sources */,
 				62F1543C21D0807F0010FA18 /* ArrayQueue.swift in Sources */,
+				620581E5235482D4000BA3CE /* 0169. Majority Element.swift in Sources */,
 				622AF9AD218947960074489C /* Sort.swift in Sources */,
 				62E745CD2180676A00AA4B86 /* PalindromeNumber.swift in Sources */,
+				62FB7469235ED3AD00E049B5 /* 0005. Longest Palindromic Substring.swift in Sources */,
 				6265390E225A2BDE003576E2 /* BitMap.swift in Sources */,
 				62F6A3DC22465D9E00CF78B5 /* HeapSort.swift in Sources */,
+				62E031F42359B35900A37F18 /* 0125. Valid Palindrome.swift in Sources */,
+				62FB7467235D508D00E049B5 /* 0132. Palindrome Partitioning II.swift in Sources */,
 				62F1543B21D0807F0010FA18 /* CircularQueue.swift in Sources */,
+				620581E12354454D000BA3CE /* 0260. Single Number III.swift in Sources */,
+				620581E3235482B3000BA3CE /* 0229. Majority Element II.swift in Sources */,
+				620581DF2354445F000BA3CE /* 0137. Single Number II.swift in Sources */,
 				62B3367222686B6B000A1B1E /* CircularLinkedList.swift in Sources */,
 				62F1543F21D0AD5B0010FA18 /* HashTable.swift in Sources */,
+				62E031EC2358363D00A37F18 /* 0887. Super Egg Drop.swift in Sources */,
+				62FB747123603CB100E049B5 /* 0215. Kth Largest Element in an Array.swift in Sources */,
 				62AC37FC22043D1600BAB18F /* StringMatch.swift in Sources */,
+				62E031F22359A42800A37F18 /* 0239. Sliding Window Maximum.swift in Sources */,
 				62FCFFD321FEA9A6004D5489 /* Permutations.swift in Sources */,
 				622AF9AB218947870074489C /* Recursion.swift in Sources */,
 				62E745CB21804BD800AA4B86 /* TwoAdd.swift in Sources */,
 				62B3366D22685103000A1B1E /* SortedArray.swift in Sources */,
 				62E745C72180181A00AA4B86 /* TwoSum.swift in Sources */,
+				620581DB235442A0000BA3CE /* 0136. Single Number.swift in Sources */,
 				62F6A3D82245D4DD00CF78B5 /* TopoSort.swift in Sources */,
 				62D3230421FF34A600B5DC8E /* Heap.swift in Sources */,
 				62ECA80021A5598500D8E91F /* FindMaxKNumber.swift in Sources */,
+				62FB746B236034A100E049B5 /* BubbleSort.swift in Sources */,
 				628B3C582269FF240051D7FB /* DoubleLinkedList.swift in Sources */,
 				6233644B220024FE009C792D /* TopK.swift in Sources */,
 				629E11BE22CB49FB0022FA71 /* AVLTree.swift in Sources */,
 				620CEEF22201A8E0007F6FDE /* Graph.swift in Sources */,
 				627F356F21B8D2B20065E1F2 /* SkipList.swift in Sources */,
 				62B33669226842D3000A1B1E /* MutbaleArray.swift in Sources */,
+				62E031EA23580E8000A37F18 /* 0088. Merge Sorted Array.swift in Sources */,
+				62E031E82357FCC900A37F18 /* 0240. Search a 2D Matrix II.swift in Sources */,
 				62A20C3E2238CBBD000213DB /* MinCoin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,7 +671,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -605,7 +698,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -624,7 +717,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-longxdragon.LeetCodeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -643,7 +736,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-longxdragon.LeetCodeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
