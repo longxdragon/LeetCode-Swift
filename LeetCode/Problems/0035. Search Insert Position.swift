@@ -8,9 +8,15 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/search-insert-position/
+/**
+ 35. 搜索插入位置
+ https://leetcode-cn.com/problems/search-insert-position/
+ 
+ 时间复杂度：O(logN)
+ 空间复杂度：O(1)
+ */
 extension Solution {
-    
+    // 二分查找
     func searchInsert(_ nums: [Int], _ target: Int) -> Int {
         var left = 0, right = nums.count - 1;
         while left <= right {

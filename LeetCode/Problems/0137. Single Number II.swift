@@ -8,9 +8,15 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/single-number-ii/
+/**
+ 137. 只出现一次的数字 II
+ https://leetcode-cn.com/problems/single-number-ii/
+ 
+ 时间复杂度：O(N)
+ 空间复杂度：O(1)
+ */
 extension Solution {
-    
+    // 两个信号完成三个数位运算后为0
     func singleNumber2(_ nums: [Int]) -> Int {
         if nums.count == 1 {
             return nums[0];

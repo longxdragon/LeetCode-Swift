@@ -8,10 +8,18 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/super-egg-drop/
-// https://www.jianshu.com/p/2f06a3eb953c
+/**
+ 887. 鸡蛋掉落
+ https://leetcode-cn.com/problems/super-egg-drop/
+ https://www.jianshu.com/p/2f06a3eb953c
+ 
+ 时间复杂度：O(K*logN)
+ 空间复杂度：O(K)
+ */
 extension Solution {
     /**
+     转换成问题：K个鸡蛋，M次移动，最大可以确定多少层
+     
      dp[0][m] = 0
      dp[k][0] = 0
      dp[1][m] = m (m > 0)

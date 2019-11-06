@@ -8,14 +8,20 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/majority-element-ii/
+/**
+ 229. 求众数 II
+ https://leetcode-cn.com/problems/majority-element-ii/
+ 
+ 时间复杂度：O(N)
+ 空间复杂度：O(1)
+ */
 extension Solution {
     
     func majorityElement(_ nums: [Int]) -> [Int] {
         if nums.count == 0 {
             return [];
         }
-        // find max count of values
+        // Boyer-Moore 投票算法 找出最大的两个值
         var c1 = 0, c2 = 0;
         var v1 = -1, v2 = -1;
         for num in nums {
@@ -30,7 +36,7 @@ extension Solution {
                 c2 -= 1;
             }
         }
-        // check out of 1/3
+        // 累加看看是否超过 1/3
         c1 = 0;
         c2 = 0;
         for num in nums {
@@ -41,7 +47,6 @@ extension Solution {
                 c2 += 1;
             }
         }
-        // v1 != v2
         var result = [Int]();
         if c1 > nums.count/3 {
             result.append(v1);

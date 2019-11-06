@@ -8,9 +8,15 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/majority-element/
+/**
+ 169. 求众数
+ https://leetcode-cn.com/problems/majority-element/
+ 
+ 时间复杂度：O(N)
+ 空间复杂度：O(1)
+ */
 extension Solution {
-    
+    // Boyer-Moore 投票算法
     func majorityElement(_ nums: [Int]) -> Int {
         var value = nums[0];
         var count = 1;

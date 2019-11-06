@@ -8,7 +8,13 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/valid-palindrome/
+/**
+ 125. 验证回文串
+ https://leetcode-cn.com/problems/valid-palindrome/
+ 
+ 时间复杂度：O(N)
+ 空间复杂度：O(1)
+ */
 extension Solution {
     
     func isPalindrome(_ s: String) -> Bool {

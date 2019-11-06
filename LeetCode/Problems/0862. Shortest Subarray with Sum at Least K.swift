@@ -8,7 +8,13 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/shortest-subarray-with-sum-at-least-k/
+/**
+ 862. 和至少为 K 的最短子数组
+ https://leetcode-cn.com/problems/shortest-subarray-with-sum-at-least-k/
+ 
+ 时间复杂度：O(N)
+ 空间复杂度：O(N)
+ */
 extension Solution {
     
     func shortestSubarray(_ A: [Int], _ K: Int) -> Int {

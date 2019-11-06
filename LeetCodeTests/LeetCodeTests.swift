@@ -10,9 +10,11 @@ import XCTest
 @testable import LeetCode
 
 class LeetCodeTests: XCTestCase {
-
+    
+    var so = Solution();
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
 
     override func tearDown() {
@@ -20,8 +22,8 @@ class LeetCodeTests: XCTestCase {
     }
 
     func testTwoAdd() {
-        let test1 = TwoSum.init()
-        print(test1.twoSum([3, 2, 3, 1, 2], 6))
+        let so = Solution();
+        print(so.twoSum([3, 2, 3, 1, 2], 6))
     }
     
     func testExample() {
@@ -31,8 +33,8 @@ class LeetCodeTests: XCTestCase {
     }
     
     func testPalindrome() {
-        let m = PalindromeNumber.init()
-        print(m.isPalindrome(10))
+        let so = Solution();
+        print(so.isPalindrome(10))
     }
     
     func testQueue() {
@@ -100,9 +102,9 @@ class LeetCodeTests: XCTestCase {
     }
     
     func  testFindMaxK() {
-        let obj = FindMaxKNumber()
+        let so = Solution();
         var items = [3,2,1,5,6,4]
-        print(obj.find(&items, 2))
+        print(so.findKthLargest(items, 2));
     }
     
     func testSearch() {
@@ -225,8 +227,8 @@ class LeetCodeTests: XCTestCase {
     }
     
     func testTopK() {
-        let obj = TopK()
-        print(obj.findTopK([15, 19, 5, 6, 7, 8, 33, 27, 21, 16, 13, 1, 2, 12], 4))
+        let obj = Solution();
+        print(obj.findKthLargest([15, 19, 5, 6, 7, 8, 33, 27, 21, 16, 13, 1, 2, 12], 4))
     }
     
     func testGraph() {
@@ -319,4 +321,66 @@ class LeetCodeTests: XCTestCase {
         XCTAssertEqual(so.findKthLargest([3,2,1,5,6,4], 2), 5);
     }
     
+    /**
+     ["deleteAtIndex","addAtIndex","deleteAtIndex","addAtTail","addAtHead","addAtIndex","addAtHead","addAtHead","get","addAtHead","get","addAtHead","deleteAtIndex","get","addAtHead","addAtTail","get","addAtHead","get","addAtTail","get","addAtTail","addAtHead","addAtIndex","addAtIndex","addAtHead","addAtHead","deleteAtIndex","get","addAtHead","addAtIndex","addAtTail","get","addAtIndex","get","addAtIndex","get","addAtIndex","addAtIndex","addAtHead","addAtHead","addAtTail","addAtIndex","get","addAtHead","addAtTail","addAtTail","addAtHead","get","addAtTail","addAtHead","addAtTail","get","addAtIndex"]
+     [[26],[20,90],[30],[40],[56],[15,23],[51],[21],[26],[83],[30],[12],[8],[4],[20],[45],[10],[56],[18],[33],[2],[70],[57],[31,24],[16,92],[40],[23],[26],[1],[92],[3,78],[42],[18],[39,9],[13],[33,17],[51],[18,95],[18,33],[80],[21],[7],[17,46],[33],[60],[26],[4],[9],[45],[38],[95],[78],[54],[42,86]]
+
+
+
+     */
+    
+    func test_707() {
+        let list = MyLinkedList();
+        
+        list.addAtHead(84);
+        list.addAtTail(2);
+        list.addAtTail(39);
+        list.deleteAtIndex(3);
+        list.addAtTail(40);
+        XCTAssertEqual(list.get(3), 40);
+    }
+    
+    func test_148() {
+        let head = ListNode(4);
+        head.next = ListNode(2);
+        head.next?.next = ListNode(1);
+        head.next?.next?.next = ListNode(3);
+        
+        let so = Solution();
+        var n = so.sortList(head);
+        print("");
+    }
+    
+    func test_147() {
+        let arr = [6,5,3,7,8,1,2,4];
+        let head = ListNode(0);
+        var node = head;
+        for i in 0..<arr.count {
+            node.next = ListNode(arr[i]);
+            node = node.next!;
+        }
+        
+        let so = Solution();
+        let n = so.arrayByLinkedList(so.insertionSortList(head.next));
+        XCTAssertEqual(n, [1,2,3,4,5,6,7,8]);
+    }
+    
+    func test_15() {
+        XCTAssertEqual(so.threeSum([-1,0,1,2,-1,-4]), [[-1,-1,2],[-1,0,1]]);
+        XCTAssertEqual(so.threeSum([0,0,0]), [[0,0,0]]);
+        XCTAssertEqual(so.threeSum([-2,0,0,2,2]), [[-2,0,2]]);
+    }
+    
+    func test_41() {
+        XCTAssertEqual(so.firstMissingPositive([1,2,0]), 3);
+    }
+    
+    func test_268() {
+        XCTAssertEqual(so.missingNumber([3,0,1]), 2);
+    }
+    
+    func test_287() {
+        XCTAssertEqual(so.findDuplicate([1,3,4,2,2]), 2);
+        XCTAssertEqual(so.findDuplicate([3,1,3,4,2]), 3);
+    }
 }

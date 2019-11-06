@@ -8,12 +8,20 @@
 
 import Foundation
 
-// https://leetcode-cn.com/problems/palindrome-partitioning/
+/**
+ 131. 分割回文串
+ https://leetcode-cn.com/problems/palindrome-partitioning/
+ 
+ 时间复杂度：O(N*N)
+ 空间复杂度：O(N*N)
+ */
 extension Solution {
     
     func partition(_ s: String) -> [[String]] {
         let chars = Array(s);
-        // 状态转移公式
+        /**
+         状N态转移公式，dp[i][j]标记从 s[i] 到 s[j] 是否是回文字符
+         */
         var dp = [[Bool]](repeating: [Bool](repeating: false, count: s.count), count: s.count);
         for i in stride(from: chars.count-1, through: 0, by: -1) {
             for j in i..<chars.count {

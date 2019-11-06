@@ -8,4 +8,24 @@
 
 import Foundation
 
-class Solution { }
+class Solution {
+    
+    public func arrayByLinkedList(_ head: ListNode?) -> [Int] {
+        var arr = [Int]();
+        var node = head;
+        while let n = node {
+            arr.append(n.val);
+            node = n.next;
+        }
+        return arr;
+    }
+}
+
+public class ListNode {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.next = nil
+    }
+}
