@@ -383,4 +383,17 @@ class LeetCodeTests: XCTestCase {
         XCTAssertEqual(so.findDuplicate([1,3,4,2,2]), 2);
         XCTAssertEqual(so.findDuplicate([3,1,3,4,2]), 3);
     }
+    
+    func test_51_52() {
+        XCTAssertEqual(so.solveNQueens(4).count, 2);
+        XCTAssertEqual(so.totalNQueens(4), 2);
+    }
+    
+    func test_1222() {
+        XCTAssertEqual(so.queensAttacktheKing([[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]], [3,3]), [[0,1],[1,0],[3,3]]);
+    }
+    
+    func test_1001() {
+        XCTAssertEqual(so.gridIllumination(5, [[0,0],[4,4]], [[1,1],[1,1]]), [1,1]);
+    }
 }

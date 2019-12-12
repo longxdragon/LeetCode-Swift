@@ -17,6 +17,10 @@
 		622AF9AB218947870074489C /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF9AA218947870074489C /* Recursion.swift */; };
 		622AF9AD218947960074489C /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AF9AC218947960074489C /* Sort.swift */; };
 		6248757E2254EE6C0076DA7C /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248757D2254EE6C0076DA7C /* GraphTest.swift */; };
+		6264128F2377BF1B00D50CD6 /* 0051. N-Queens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6264128E2377BF1B00D50CD6 /* 0051. N-Queens.swift */; };
+		626412912377BF2F00D50CD6 /* 0052. N-Queens II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626412902377BF2F00D50CD6 /* 0052. N-Queens II.swift */; };
+		626412932377BF4500D50CD6 /* 1222. Queens That Can Attack the King.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626412922377BF4500D50CD6 /* 1222. Queens That Can Attack the King.swift */; };
+		626412952377BF5800D50CD6 /* 1001. Grid Illumination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626412942377BF5800D50CD6 /* 1001. Grid Illumination.swift */; };
 		6265390E225A2BDE003576E2 /* BitMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265390D225A2BDE003576E2 /* BitMap.swift */; };
 		62653910225AF03D003576E2 /* SortTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6265390F225AF03D003576E2 /* SortTest.swift */; };
 		627A1DB423683EBA0012D22E /* 0707. Design Linked List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A1DB323683EBA0012D22E /* 0707. Design Linked List.swift */; };
@@ -30,6 +34,7 @@
 		627DD1D521B61C4B0011545A /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627DD1D421B61C4B0011545A /* Search.swift */; };
 		627DD1D721B649A40011545A /* MathSqrt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627DD1D621B649A40011545A /* MathSqrt.swift */; };
 		627F356F21B8D2B20065E1F2 /* SkipList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F356E21B8D2B20065E1F2 /* SkipList.swift */; };
+		6281091E238FEE1100AA9ED9 /* 0122. Best Time to Buy and Sell Stock II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6281091D238FEE1100AA9ED9 /* 0122. Best Time to Buy and Sell Stock II.swift */; };
 		6284E98F221B9DE400906B60 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6284E98E221B9DE400906B60 /* Trie.swift */; };
 		628B3C582269FF240051D7FB /* DoubleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B3C572269FF240051D7FB /* DoubleLinkedList.swift */; };
 		62902838236BFCFA000F4B7C /* 0147. Insertion Sort List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62902837236BFCFA000F4B7C /* 0147. Insertion Sort List.swift */; };
@@ -103,6 +108,10 @@
 		622AF9AA218947870074489C /* Recursion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		622AF9AC218947960074489C /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		6248757D2254EE6C0076DA7C /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
+		6264128E2377BF1B00D50CD6 /* 0051. N-Queens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0051. N-Queens.swift"; sourceTree = "<group>"; };
+		626412902377BF2F00D50CD6 /* 0052. N-Queens II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0052. N-Queens II.swift"; sourceTree = "<group>"; };
+		626412922377BF4500D50CD6 /* 1222. Queens That Can Attack the King.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1222. Queens That Can Attack the King.swift"; sourceTree = "<group>"; };
+		626412942377BF5800D50CD6 /* 1001. Grid Illumination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1001. Grid Illumination.swift"; sourceTree = "<group>"; };
 		6265390D225A2BDE003576E2 /* BitMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMap.swift; sourceTree = "<group>"; };
 		6265390F225AF03D003576E2 /* SortTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTest.swift; sourceTree = "<group>"; };
 		627A1DB323683EBA0012D22E /* 0707. Design Linked List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0707. Design Linked List.swift"; sourceTree = "<group>"; };
@@ -116,6 +125,7 @@
 		627DD1D421B61C4B0011545A /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		627DD1D621B649A40011545A /* MathSqrt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathSqrt.swift; sourceTree = "<group>"; };
 		627F356E21B8D2B20065E1F2 /* SkipList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipList.swift; sourceTree = "<group>"; };
+		6281091D238FEE1100AA9ED9 /* 0122. Best Time to Buy and Sell Stock II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0122. Best Time to Buy and Sell Stock II.swift"; sourceTree = "<group>"; };
 		6284E98E221B9DE400906B60 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		628B3C572269FF240051D7FB /* DoubleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLinkedList.swift; sourceTree = "<group>"; };
 		62902837236BFCFA000F4B7C /* 0147. Insertion Sort List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0147. Insertion Sort List.swift"; sourceTree = "<group>"; };
@@ -288,6 +298,11 @@
 				62ACE8662372B82A0084AA11 /* 0287. Find the Duplicate Number.swift */,
 				62ACE8682372D47A0084AA11 /* 0448. Find All Numbers Disappeared in an Array.swift */,
 				62ACE86A2372D5870084AA11 /* 0141. Linked List Cycle.swift */,
+				6264128E2377BF1B00D50CD6 /* 0051. N-Queens.swift */,
+				626412902377BF2F00D50CD6 /* 0052. N-Queens II.swift */,
+				626412922377BF4500D50CD6 /* 1222. Queens That Can Attack the King.swift */,
+				626412942377BF5800D50CD6 /* 1001. Grid Illumination.swift */,
+				6281091D238FEE1100AA9ED9 /* 0122. Best Time to Buy and Sell Stock II.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -486,6 +501,8 @@
 				62ACE8632372966B0084AA11 /* 0041. First Missing Positive.swift in Sources */,
 				62FB7465235D507600E049B5 /* 0131. Palindrome Partitioning.swift in Sources */,
 				627DD1D521B61C4B0011545A /* Search.swift in Sources */,
+				6281091E238FEE1100AA9ED9 /* 0122. Best Time to Buy and Sell Stock II.swift in Sources */,
+				6264128F2377BF1B00D50CD6 /* 0051. N-Queens.swift in Sources */,
 				62ACE861237185730084AA11 /* 0015. 3Sum.swift in Sources */,
 				62B3367022685DF1000A1B1E /* LinkedList.swift in Sources */,
 				627A1DC0236A79000012D22E /* 0021. Merge Two Sorted Lists.swift in Sources */,
@@ -520,6 +537,7 @@
 				62E031EC2358363D00A37F18 /* 0887. Super Egg Drop.swift in Sources */,
 				62FB747123603CB100E049B5 /* 0215. Kth Largest Element in an Array.swift in Sources */,
 				62AC37FC22043D1600BAB18F /* StringMatch.swift in Sources */,
+				626412952377BF5800D50CD6 /* 1001. Grid Illumination.swift in Sources */,
 				62E031F22359A42800A37F18 /* 0239. Sliding Window Maximum.swift in Sources */,
 				62ACE8692372D47A0084AA11 /* 0448. Find All Numbers Disappeared in an Array.swift in Sources */,
 				62FCFFD321FEA9A6004D5489 /* Permutations.swift in Sources */,
@@ -528,6 +546,7 @@
 				62ACE86B2372D5870084AA11 /* 0141. Linked List Cycle.swift in Sources */,
 				62B3366D22685103000A1B1E /* SortedArray.swift in Sources */,
 				620581DB235442A0000BA3CE /* 0136. Single Number.swift in Sources */,
+				626412932377BF4500D50CD6 /* 1222. Queens That Can Attack the King.swift in Sources */,
 				62F6A3D82245D4DD00CF78B5 /* TopoSort.swift in Sources */,
 				62D3230421FF34A600B5DC8E /* Heap.swift in Sources */,
 				62902838236BFCFA000F4B7C /* 0147. Insertion Sort List.swift in Sources */,
@@ -536,6 +555,7 @@
 				629E11BE22CB49FB0022FA71 /* AVLTree.swift in Sources */,
 				627A1DC2236AB45E0012D22E /* 0148. Sort List.swift in Sources */,
 				620CEEF22201A8E0007F6FDE /* Graph.swift in Sources */,
+				626412912377BF2F00D50CD6 /* 0052. N-Queens II.swift in Sources */,
 				627F356F21B8D2B20065E1F2 /* SkipList.swift in Sources */,
 				62B33669226842D3000A1B1E /* MutbaleArray.swift in Sources */,
 				62E031EA23580E8000A37F18 /* 0088. Merge Sorted Array.swift in Sources */,

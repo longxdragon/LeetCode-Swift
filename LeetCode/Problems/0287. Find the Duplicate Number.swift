@@ -17,7 +17,7 @@ import Foundation
  */
 extension Solution {
     
-    /* 链表有环的解法：快慢指针 */
+    /* 1、链表有环的解法：快慢指针 */
     func findDuplicate(_ nums: [Int]) -> Int {
         var tor = nums[0];
         var har = nums[nums[0]];
@@ -33,7 +33,7 @@ extension Solution {
         return tor;
     }
     
-    /* 通用方法：二分查找 O(N*logN) */
+    /* 2、通用方法：二分查找 O(N*logN) */
     private func findDuplicate_2(_ nums: [Int]) -> Int {
         var left = 1;
         var right = nums.count;
